@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="./css/main.min.css">
+
+	<title>CRM Dashboard Customers</title>
+</head>
+
+<body>
+	<div class="wrapper wrapper-full">
+		<div class="wrapper__left">
+			<div class='side-menu' id='side-menu'>
+				<div class="side-menu__header">
+					<div class="side-menu__icon">
+						<img src="./public/setting.svg" alt="dashboard-icon" class="side-menu__img">
+					</div>
+					<h1 class="side-menu__title">
+						Dashboard
+					</h1>
+					<p class="side-menu__version">v.01</p>
+				</div>
+				<ul class="side-menu__list">
+					<a href="" class="side-menu__item">
+						<div class="side-menu__item-icon">
+							<svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M2.09467 2.09467C3.42914 0.760201 5.42603 0.25 8 0.25H14C16.574 0.25 18.5709 0.760201 19.9053 2.09467C21.2398 3.42914 21.75 5.42603 21.75 8V14C21.75 16.574 21.2398 18.5709 19.9053 19.9053C18.5709 21.2398 16.574 21.75 14 21.75H8C5.42603 21.75 3.42914 21.2398 2.09467 19.9053C0.760201 18.5709 0.25 16.574 0.25 14V8C0.25 5.42603 0.760201 3.42914 2.09467 2.09467ZM3.15533 3.15533C2.2398 4.07086 1.75 5.57397 1.75 8V14C1.75 16.426 2.2398 17.9291 3.15533 18.8447C4.07086 19.7602 5.57397 20.25 8 20.25H14C16.426 20.25 17.9291 19.7602 18.8447 18.8447C19.7602 17.9291 20.25 16.426 20.25 14V8C20.25 5.57397 19.7602 4.07086 18.8447 3.15533C17.9291 2.2398 16.426 1.75 14 1.75H8C5.57397 1.75 4.07086 2.2398 3.15533 3.15533Z"
+									fill="#9197B3" />
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M14.7513 7.26197C13.4129 5.93179 11.2465 5.93413 9.92033 7.26034C8.99618 8.1845 8.71456 9.51201 9.07685 10.6894C9.15854 10.955 9.08678 11.2439 8.89034 11.4403L6.32483 14.0058C6.32235 14.0092 6.31697 14.0169 6.30973 14.0298C6.29721 14.052 6.28417 14.0807 6.27342 14.1127C6.26262 14.1448 6.25663 14.1728 6.2541 14.1929C6.25327 14.1994 6.25295 14.204 6.25282 14.2067L6.25343 14.2109L6.41183 15.3989C6.41589 15.418 6.43536 15.4688 6.48728 15.5216C6.53964 15.5749 6.58009 15.585 6.58289 15.5858V15.5858L6.58914 15.5866L7.79723 15.7477C7.79959 15.7477 7.80776 15.7478 7.82187 15.7462C7.84403 15.7437 7.87143 15.738 7.90018 15.7285C7.92908 15.7191 7.95199 15.7083 7.9669 15.6996C7.97018 15.6977 7.97265 15.6962 7.9744 15.695C7.97649 15.6929 7.97859 15.6908 7.98071 15.6886L10.5707 13.1086C10.7684 12.9117 11.059 12.8408 11.3251 12.9246C12.4956 13.2929 13.822 13.0067 14.7488 12.0805C16.0791 10.7412 16.0742 8.57665 14.7513 7.26197ZM15.8087 6.19805C13.8871 4.28823 10.7735 4.28589 8.85967 6.19968C7.6414 7.41796 7.20284 9.11585 7.52779 10.6816L5.24968 12.9597L5.23555 12.9742C5.05192 13.168 4.92646 13.4121 4.8516 13.6348C4.77834 13.8527 4.7259 14.1325 4.76738 14.415L4.92659 15.6091L4.92873 15.624C4.98623 15.9978 5.17759 16.3291 5.41774 16.5734C5.65732 16.817 5.99433 17.0229 6.39346 17.0738L7.5865 17.2328C7.86189 17.2723 8.13926 17.2287 8.36733 17.1539C8.59118 17.0806 8.84617 16.9514 9.04539 16.7453L11.3256 14.4738C12.8964 14.807 14.5946 14.3561 15.8103 13.1403L15.812 13.1387C17.7209 11.218 17.7256 8.10311 15.8087 6.19805Z"
+									fill="#9197B3" />
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M8.07275 13.8866C8.36735 13.5954 8.84222 13.5982 9.1334 13.8928L9.98342 14.7528C10.2746 15.0474 10.2718 15.5222 9.97723 15.8134C9.68263 16.1046 9.20776 16.1018 8.91658 15.8072L8.06656 14.9472C7.77539 14.6526 7.77816 14.1778 8.07275 13.8866Z"
+									fill="#9197B3" />
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M11.3945 9.7C11.3945 9.14772 11.8422 8.7 12.3945 8.7H12.4035C12.9558 8.7 13.4035 9.14772 13.4035 9.7C13.4035 10.2523 12.9558 10.7 12.4035 10.7H12.3945C11.8422 10.7 11.3945 10.2523 11.3945 9.7Z"
+									fill="#9197B3" />
+							</svg>
+						</div>
+						<span class="side-menu__item-text">Dashboard</span>
+					</a>
+					<a href="" class="side-menu__item">
+						<div class="side-menu__item-icon">
+							<svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M14 21.75H8C2.57 21.75 0.25 19.43 0.25 14V8C0.25 2.57 2.57 0.25 8 0.25H14C19.43 0.25 21.75 2.57 21.75 8V14C21.75 19.43 19.43 21.75 14 21.75ZM8 1.75C3.39 1.75 1.75 3.39 1.75 8V14C1.75 18.61 3.39 20.25 8 20.25H14C18.61 20.25 20.25 18.61 20.25 14V8C20.25 3.39 18.61 1.75 14 1.75H8Z"
+									fill="#9197B3" />
+								<path
+									d="M11.0006 12.0797C10.8706 12.0797 10.7406 12.0497 10.6206 11.9797L5.32061 8.9197C4.96061 8.7097 4.84059 8.2497 5.05059 7.8997C5.26059 7.5397 5.72061 7.4197 6.07061 7.6297L10.9906 10.4797L15.8806 7.6497C16.2406 7.4397 16.7006 7.5697 16.9006 7.9197C17.1006 8.2697 16.9806 8.7397 16.6306 8.9397L11.3706 11.9797C11.2606 12.0397 11.1306 12.0797 11.0006 12.0797Z"
+									fill="#9197B3" />
+								<path
+									d="M11 17.5201C10.59 17.5201 10.25 17.1801 10.25 16.7701V11.3301C10.25 10.9201 10.59 10.5801 11 10.5801C11.41 10.5801 11.75 10.9201 11.75 11.3301V16.7701C11.75 17.1801 11.41 17.5201 11 17.5201Z"
+									fill="#9197B3" />
+								<path
+									d="M11.0002 17.7498C10.4202 17.7498 9.8503 17.6198 9.3903 17.3698L6.19025 15.5898C5.23025 15.0598 4.49023 13.7898 4.49023 12.6898V9.2998C4.49023 8.20981 5.24025 6.9398 6.19025 6.3998L9.3903 4.6198C10.3103 4.1098 11.6902 4.1098 12.6102 4.6198L15.8102 6.3998C16.7702 6.9298 17.5103 8.19981 17.5103 9.2998V12.6898C17.5103 13.7798 16.7602 15.0498 15.8102 15.5898L12.6102 17.3698C12.1502 17.6298 11.5802 17.7498 11.0002 17.7498ZM11.0002 5.7498C10.6702 5.7498 10.3502 5.8098 10.1202 5.9398L6.92026 7.7198C6.43026 7.9898 5.99023 8.7498 5.99023 9.2998V12.6898C5.99023 13.2498 6.43026 13.9998 6.92026 14.2698L10.1202 16.0498C10.5802 16.3098 11.4202 16.3098 11.8802 16.0498L15.0802 14.2698C15.5702 13.9998 16.0103 13.2398 16.0103 12.6898V9.2998C16.0103 8.73981 15.5702 7.9898 15.0802 7.7198L11.8802 5.9398C11.6502 5.8098 11.3302 5.7498 11.0002 5.7498Z"
+									fill="#9197B3" />
+							</svg>
+						</div>
+						<span class="side-menu__item-text">Product</span>
+					</a>
+					<a href="" class="side-menu__item">
+						<div class="side-menu__item-icon">
+							<svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M14.0006 21.7498H8.00063C6.68063 21.7498 5.58063 21.6198 4.65063 21.3398C4.31063 21.2398 4.09063 20.9098 4.11063 20.5598C4.36063 17.5698 7.39063 15.2197 11.0006 15.2197C14.6106 15.2197 17.6306 17.5598 17.8906 20.5598C17.9206 20.9198 17.7006 21.2398 17.3506 21.3398C16.4206 21.6198 15.3206 21.7498 14.0006 21.7498ZM5.72063 20.0598C6.38063 20.1898 7.13063 20.2498 8.00063 20.2498H14.0006C14.8706 20.2498 15.6206 20.1898 16.2806 20.0598C15.7506 18.1398 13.5606 16.7197 11.0006 16.7197C8.44063 16.7197 6.25063 18.1398 5.72063 20.0598Z"
+									fill="#9197B3" />
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M2.09467 2.09467C3.42914 0.760201 5.42603 0.25 8 0.25H14C16.574 0.25 18.5709 0.760201 19.9053 2.09467C21.2398 3.42914 21.75 5.42603 21.75 8V14C21.75 15.9506 21.4585 17.5641 20.7401 18.8128C20.0039 20.0923 18.8645 20.9113 17.3443 21.3416C17.1288 21.4026 16.8974 21.3642 16.7133 21.2368C16.5291 21.1094 16.4115 20.9064 16.3927 20.6832C16.2156 18.5909 13.9934 16.7197 11.0006 16.7197C8.00778 16.7197 5.78438 18.5909 5.60733 20.6832C5.58845 20.9064 5.47087 21.1094 5.28673 21.2368C5.10259 21.3642 4.87116 21.4026 4.65571 21.3416C3.13552 20.9113 1.99613 20.0923 1.25993 18.8128C0.541478 17.5641 0.25 15.9506 0.25 14V8C0.25 5.42603 0.760201 3.42914 2.09467 2.09467ZM3.15533 3.15533C2.2398 4.07086 1.75 5.57397 1.75 8V14C1.75 15.8294 2.02852 17.1409 2.56007 18.0647C2.95322 18.748 3.50844 19.2603 4.28506 19.6155C5.02949 17.0088 7.85887 15.2197 11.0006 15.2197C14.1423 15.2197 16.9705 17.0088 17.7149 19.6155C18.4916 19.2603 19.0468 18.748 19.4399 18.0647C19.9715 17.1409 20.25 15.8294 20.25 14V8C20.25 5.57397 19.7602 4.07086 18.8447 3.15533C17.9291 2.2398 16.426 1.75 14 1.75H8C5.57397 1.75 4.07086 2.2398 3.15533 3.15533ZM11 6.75C9.43422 6.75 8.17 8.01423 8.17 9.58C8.17 11.1485 9.43694 12.42 11 12.42C12.5631 12.42 13.83 11.1485 13.83 9.58C13.83 8.01423 12.5658 6.75 11 6.75ZM6.67 9.58C6.67 7.18581 8.60578 5.25 11 5.25C13.3942 5.25 15.33 7.18581 15.33 9.58C15.33 11.9715 13.3969 13.92 11 13.92C8.60306 13.92 6.67 11.9715 6.67 9.58Z"
+									fill="#9197B3" />
+								<path
+									d="M11 13.92C8.61002 13.92 6.67 11.97 6.67 9.58C6.67 7.19002 8.61002 5.25 11 5.25C13.39 5.25 15.33 7.19002 15.33 9.58C15.33 11.97 13.39 13.92 11 13.92ZM11 6.75C9.44 6.75 8.17 8.02002 8.17 9.58C8.17 11.15 9.44 12.42 11 12.42C12.56 12.42 13.83 11.15 13.83 9.58C13.83 8.02002 12.56 6.75 11 6.75Z"
+									fill="#9197B3" />
+							</svg>
+						</div>
+						<span class="side-menu__item-text">Customers</span>
+					</a>
+					<a href="" class="side-menu__item">
+						<div class="side-menu__item-icon">
+							<svg width="22" height="21" viewBox="0 0 22 21" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M2.60156 14.1104C3.01577 14.1104 3.35156 14.4462 3.35156 14.8604C3.35156 16.021 4.4539 17.0504 6.18158 17.0504C7.89596 17.0504 9.0016 16.0137 9.0016 14.8604C9.0016 14.4462 9.33739 14.1104 9.7516 14.1104C10.1658 14.1104 10.5016 14.4462 10.5016 14.8604V16.8904C10.5016 19.119 8.46465 20.7504 6.18158 20.7504C3.90139 20.7504 1.85156 19.1215 1.85156 16.8904V14.8604C1.85156 14.4462 2.18735 14.1104 2.60156 14.1104ZM3.60513 17.856C4.03548 18.6474 4.9803 19.2504 6.18158 19.2504C7.38356 19.2504 8.32566 18.646 8.7524 17.8516C8.01279 18.3035 7.10856 18.5504 6.18158 18.5504C5.25221 18.5504 4.34618 18.3059 3.60513 17.856Z"
+									fill="#9197B3" />
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M6.16003 9.76C5.34166 9.76 4.6302 10.0405 4.12456 10.4839C3.62454 10.9214 3.34009 11.4948 3.34009 12.11C3.34009 12.4645 3.43796 12.7909 3.61109 13.0807C4.03854 13.773 4.97634 14.3 6.17004 14.3C7.36853 14.3 8.30277 13.7796 8.72815 13.0822C8.90187 12.7919 9.0001 12.465 9.0001 12.11C9.0001 11.493 8.71529 10.9173 8.20994 10.4962L8.20046 10.4883C7.68868 10.0474 6.97312 9.76 6.16003 9.76ZM3.13558 9.35611C3.92994 8.65951 4.9984 8.26 6.16003 8.26C7.32465 8.26 8.38719 8.67109 9.17494 9.34779C9.98691 10.0266 10.5001 11.0092 10.5001 12.11C10.5001 12.7542 10.3188 13.3466 10.0132 13.8559L10.0109 13.8598C9.25563 15.1014 7.77043 15.8 6.17004 15.8C4.56568 15.8 3.08458 15.0888 2.33106 13.8627L2.32687 13.8559C2.02129 13.3466 1.84009 12.7541 1.84009 12.11C1.84009 11.0052 2.3556 10.0386 3.13558 9.35611Z"
+									fill="#9197B3" />
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M6.18158 9.75C4.51321 9.75 3.35156 10.8998 3.35156 12.11V14.8604C3.35156 16.0113 4.46426 17.0504 6.18158 17.0504C7.89779 17.0504 9.0016 16.0222 9.0016 14.8604V12.11C9.0016 11.493 8.71629 10.9116 8.21991 10.4763C7.70828 10.0365 6.99352 9.75 6.18158 9.75ZM1.85156 12.11C1.85156 9.88016 3.88995 8.25 6.18158 8.25C7.34849 8.25 8.41292 8.66271 9.20114 9.34179L9.20551 9.34555C9.98777 10.03 10.5016 11.0079 10.5016 12.11V14.8604C10.5016 17.1386 8.40537 18.5504 6.18158 18.5504C3.9589 18.5504 1.85156 17.1295 1.85156 14.8604V12.11Z"
+									fill="#9197B3" />
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M17.92 8.69995C17.5609 8.69995 17.245 8.83918 17.0173 9.07311L17.0038 9.08658C16.7378 9.34624 16.5892 9.716 16.6266 10.1088L16.6275 10.1176C16.6804 10.7526 17.2908 11.2999 18.0399 11.2999H19.9828C20.1445 11.2895 20.25 11.1631 20.25 11.03V8.9699C20.25 8.83678 20.1444 8.71038 19.9828 8.69995H17.92ZM15.9492 8.01987C16.4609 7.49802 17.1624 7.19995 17.92 7.19995H20C20.0089 7.19995 20.0178 7.20011 20.0268 7.20043C20.9797 7.23446 21.75 8.00562 21.75 8.9699V11.03C21.75 11.9943 20.9797 12.7654 20.0268 12.7994C20.0178 12.7997 20.0089 12.7999 20 12.7999H18.0399C16.6303 12.7999 15.2623 11.7692 15.133 10.2466C15.0522 9.38448 15.3804 8.57901 15.9492 8.01987Z"
+									fill="#9197B3" />
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M6 2.25C5.75575 2.25 5.52398 2.26744 5.30404 2.30128L5.28339 2.30416C4.17606 2.44312 3.30559 2.91721 2.70955 3.61651C2.11197 4.31761 1.75 5.29287 1.75 6.5V8.5C1.75 8.91421 1.41421 9.25 1 9.25C0.585786 9.25 0.25 8.91421 0.25 8.5V6.5C0.25 4.98713 0.70803 3.65239 1.56796 2.64349C2.42737 1.63519 3.64812 0.999904 5.08633 0.817136C5.38312 0.772041 5.68789 0.75 6 0.75H15C15.2697 0.75 15.5608 0.759756 15.8545 0.807111C17.305 0.979746 18.5395 1.6109 19.4103 2.62C20.2833 3.63163 20.75 4.9753 20.75 6.5V7.95001C20.75 8.36422 20.4142 8.70001 20 8.70001L17.92 8.69995C17.5609 8.69995 17.245 8.83918 17.0173 9.07311L17.0038 9.08658C16.7378 9.34624 16.5892 9.716 16.6266 10.1088L16.6275 10.1176C16.6804 10.7526 17.2908 11.2999 18.0399 11.2999L20 11.3C20.4142 11.3 20.75 11.6358 20.75 12.05V13.5C20.75 15.1704 20.1899 16.6207 19.1553 17.6553C18.1207 18.6899 16.6704 19.25 15 19.25H12.5C12.0858 19.25 11.75 18.9142 11.75 18.5C11.75 18.0858 12.0858 17.75 12.5 17.75H15C16.3296 17.75 17.3793 17.3101 18.0947 16.5947C18.8101 15.8793 19.25 14.8296 19.25 13.5V12.8L18.0399 12.7999C16.6303 12.7999 15.2623 11.7692 15.133 10.2466C15.0522 9.38448 15.3804 8.57901 15.9492 8.01987C16.4609 7.49802 17.1624 7.19995 17.92 7.19995L19.25 7.20001V6.5C19.25 5.2847 18.8817 4.30336 18.2747 3.59999C17.6691 2.89822 16.7851 2.42541 15.6634 2.29497C15.6511 2.29354 15.6389 2.29182 15.6267 2.28979C15.4468 2.2598 15.2445 2.25 15 2.25H6Z"
+									fill="#9197B3" />
+							</svg>
+						</div>
+						<span class="side-menu__item-text">Income</span>
+					</a>
+					<a href="" class="side-menu__item">
+						<div class="side-menu__item-icon">
+							<svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M11 21.7503C10.37 21.7503 9.78 21.5104 9.34 21.0604L7.82001 19.5404C7.70001 19.4204 7.38 19.2904 7.22 19.2904H5.06C3.76 19.2904 2.70999 18.2403 2.70999 16.9403V14.7804C2.70999 14.6204 2.57999 14.3004 2.45999 14.1804L0.94 12.6604C0.5 12.2204 0.25 11.6303 0.25 11.0003C0.25 10.3703 0.49 9.7803 0.94 9.3403L2.45999 7.82028C2.57999 7.70028 2.70999 7.3803 2.70999 7.2203V5.06039C2.70999 3.76039 3.76 2.71029 5.06 2.71029H7.22C7.38 2.71029 7.70001 2.58029 7.82001 2.46029L9.34 0.940273C10.22 0.0602734 11.78 0.0602734 12.66 0.940273L14.18 2.46029C14.3 2.58029 14.62 2.71029 14.78 2.71029H16.94C18.24 2.71029 19.29 3.76039 19.29 5.06039V7.2203C19.29 7.3803 19.42 7.70028 19.54 7.82028L21.06 9.3403C21.5 9.7803 21.75 10.3703 21.75 11.0003C21.75 11.6303 21.51 12.2204 21.06 12.6604L19.54 14.1804C19.42 14.3004 19.29 14.6204 19.29 14.7804V16.9403C19.29 18.2403 18.24 19.2904 16.94 19.2904H14.78C14.62 19.2904 14.3 19.4204 14.18 19.5404L12.66 21.0604C12.22 21.5104 11.63 21.7503 11 21.7503ZM3.51999 13.1203C3.91999 13.5203 4.20999 14.2204 4.20999 14.7804V16.9403C4.20999 17.4103 4.59 17.7904 5.06 17.7904H7.22C7.78 17.7904 8.48001 18.0803 8.88 18.4803L10.4 20.0003C10.72 20.3203 11.28 20.3203 11.6 20.0003L13.12 18.4803C13.52 18.0803 14.22 17.7904 14.78 17.7904H16.94C17.41 17.7904 17.79 17.4103 17.79 16.9403V14.7804C17.79 14.2204 18.08 13.5203 18.48 13.1203L20 11.6003C20.16 11.4403 20.25 11.2303 20.25 11.0003C20.25 10.7703 20.16 10.5604 20 10.4004L18.48 8.88034C18.08 8.48034 17.79 7.7803 17.79 7.2203V5.06039C17.79 4.59039 17.41 4.21029 16.94 4.21029H14.78C14.22 4.21029 13.52 3.92035 13.12 3.52035L11.6 2.00033C11.28 1.68033 10.72 1.68033 10.4 2.00033L8.88 3.52035C8.48001 3.92035 7.78 4.21029 7.22 4.21029H5.06C4.59 4.21029 4.20999 4.59039 4.20999 5.06039V7.2203C4.20999 7.7803 3.91999 8.48034 3.51999 8.88034L2 10.4004C1.84 10.5604 1.75 10.7703 1.75 11.0003C1.75 11.2303 1.84 11.4403 2 11.6003L3.51999 13.1203Z"
+									fill="#9197B3" />
+								<path
+									d="M14.0002 15C13.4402 15 12.9902 14.55 12.9902 14C12.9902 13.45 13.4402 13 13.9902 13C14.5402 13 14.9902 13.45 14.9902 14C14.9902 14.55 14.5502 15 14.0002 15Z"
+									fill="#9197B3" />
+								<path
+									d="M8.01001 9C7.45001 9 7 8.55 7 8C7 7.45 7.45 7 8 7C8.55 7 9 7.45 9 8C9 8.55 8.56001 9 8.01001 9Z"
+									fill="#9197B3" />
+								<path
+									d="M7.99945 14.7495C7.80945 14.7495 7.61945 14.6795 7.46945 14.5295C7.17945 14.2395 7.17945 13.7595 7.46945 13.4695L13.4695 7.46945C13.7595 7.17945 14.2395 7.17945 14.5295 7.46945C14.8195 7.75945 14.8195 8.23951 14.5295 8.52951L8.52945 14.5295C8.37945 14.6795 8.18945 14.7495 7.99945 14.7495Z"
+									fill="#9197B3" />
+							</svg>
+						</div>
+						<span class="side-menu__item-text">Promote</span>
+					</a>
+					<a href="" class="side-menu__item">
+						<div class="side-menu__item-icon">
+							<svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M7 21.3199C6.72 21.3199 6.42998 21.2499 6.16998 21.1099C5.59998 20.8099 5.25 20.2099 5.25 19.5699V18.15C2.23 17.84 0.25 15.6199 0.25 12.4399V6.43994C0.25 2.99994 2.56 0.689941 6 0.689941H16C19.44 0.689941 21.75 2.99994 21.75 6.43994V12.4399C21.75 15.8799 19.44 18.1899 16 18.1899H12.23L7.96997 21.03C7.67997 21.22 7.34 21.3199 7 21.3199ZM6 2.17993C3.42 2.17993 1.75 3.84993 1.75 6.42993V12.43C1.75 15.01 3.42 16.68 6 16.68C6.41 16.68 6.75 17.02 6.75 17.43V19.56C6.75 19.69 6.83 19.75 6.88 19.78C6.93001 19.81 7.03001 19.84 7.14001 19.77L11.59 16.81C11.71 16.73 11.86 16.68 12.01 16.68H16.01C18.59 16.68 20.26 15.01 20.26 12.43V6.42993C20.26 3.84993 18.59 2.17993 16.01 2.17993H6Z"
+									fill="#9197B3" />
+								<path
+									d="M10.9998 11.1099C10.5898 11.1099 10.2498 10.7699 10.2498 10.3599V10.1499C10.2498 8.9899 11.0998 8.41989 11.4198 8.19989C11.7898 7.94989 11.9098 7.7799 11.9098 7.5199C11.9098 7.0199 11.4998 6.60986 10.9998 6.60986C10.4998 6.60986 10.0898 7.0199 10.0898 7.5199C10.0898 7.9299 9.7498 8.2699 9.3398 8.2699C8.92984 8.2699 8.58984 7.9299 8.58984 7.5199C8.58984 6.1899 9.6698 5.10986 10.9998 5.10986C12.3298 5.10986 13.4098 6.1899 13.4098 7.5199C13.4098 8.6599 12.5698 9.2299 12.2598 9.4399C11.8698 9.6999 11.7498 9.8699 11.7498 10.1499V10.3599C11.7498 10.7799 11.4098 11.1099 10.9998 11.1099Z"
+									fill="#9197B3" />
+								<path
+									d="M11 13.6001C10.58 13.6001 10.25 13.2601 10.25 12.8501C10.25 12.4401 10.59 12.1001 11 12.1001C11.41 12.1001 11.75 12.4401 11.75 12.8501C11.75 13.2601 11.42 13.6001 11 13.6001Z"
+									fill="#9197B3" />
+							</svg>
+						</div>
+						<span class="side-menu__item-text">Help</span>
+					</a>
+				</ul>
+				<a class="side-menu__user">
+					<div class="side-menu__user-avatar">
+						<img class="side-menu__user-img" src="./public/6.jpg" alt="user-image" />
+					</div>
+					<div class="side-menu__user-info">
+						<p class="side-menu__user-name">Evano</p>
+						<p class="side-menu__user-post">Project Manager</p>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="wrapper__right right-full">
+			<section class="product product-full">
+				<div class="product__header">
+					<h1 class="product__title">
+						Hello Evano <span>👋🏼</span>,
+					</h1>
+					<button class="side-menu-btn" id='side-menu-btn'>
+						<span></span>
+					</button>
+				</div>
+				<section class="customers">
+					<div class="customers__header">
+						<div class="customers__header-content">
+							<h2 class="customers__title">All Customers</h2>
+							<h3 class="customers__subtext">Active Members</h3>
+						</div>
+						<div class="customers__search">
+							<div class="customers__icon">
+								<img class="customers__img" src="./public/search.svg" alt="search-icon" />
+							</div>
+							<label for="customers-search" class="customers__label">
+								<input class='customers__search-input' type="text" id="customers-search"
+									placeholder='Search' />
+							</label>
+						</div>
+					</div>
+					<div class="customers__table-container">
+						<table class='customers__table'>
+							<thead class='customers__table-header'>
+								<tr class='customers__table-item'>
+									<th class='customers__table-name'>Customer Name</th>
+									<th class='customers__table-company'>Company</th>
+									<th class='customers__table-phone'>Phone Number</th>
+									<th class='customers__table-email'>Email</th>
+									<th class='customers__table-country'>Country</th>
+									<th class='customers__table-status'>Status</th>
+								</tr>
+							</thead>
+							<tbody class='customers__table-body'>
+								<tr class='customers__table-item'>
+									<td class='customers__table-name'>Jane Cooper</td>
+									<td class='customers__table-company'>Microsoft</td>
+									<td class='customers__table-phone'>(225) 555-0118</td>
+									<td class='customers__table-email'>jane@microsoft.com</td>
+									<td class='customers__table-country'>United States</td>
+									<td class='customers__table-status'>
+										<label class="customers__table-label">
+											<input type='checkbox' class="customers__table-check" />
+											<span class="customers__table-check-btn" data-inactive='Inactive'
+												data-active='Active'></span>
+										</label>
+									</td>
+								</tr>
+								<tr class='customers__table-item'>
+									<td class='customers__table-name'>Floyd Miles</td>
+									<td class='customers__table-company'>Yahoo</td>
+									<td class='customers__table-phone'>(205) 555-0100</td>
+									<td class='customers__table-email'>floyd@yahoo.com</td>
+									<td class='customers__table-country'>Kiribati</td>
+									<td class='customers__table-status'>
+										<label class="customers__table-label">
+											<input type='checkbox' class="customers__table-check" />
+											<span class="customers__table-check-btn" data-inactive='Inactive'
+												data-active='Active'></span>
+										</label>
+									</td>
+								</tr>
+								<tr class='customers__table-item'>
+									<td class='customers__table-name'>Ronald Richards</td>
+									<td class='customers__table-company'>Adobe</td>
+									<td class='customers__table-phone'>(302) 555-0107</td>
+									<td class='customers__table-email'>ronald@adobe.com</td>
+									<td class='customers__table-country'>Israel</td>
+									<td class='customers__table-status'>
+										<label class="customers__table-label">
+											<input type='checkbox' class="customers__table-check" />
+											<span class="customers__table-check-btn" data-inactive='Inactive'
+												data-active='Active'></span>
+										</label>
+									</td>
+								</tr>
+								<tr class='customers__table-item'>
+									<td class='customers__table-name'>Marvin McKinney</td>
+									<td class='customers__table-company'>Tesla</td>
+									<td class='customers__table-phone'>(252) 555-0126</td>
+									<td class='customers__table-email'>marvin@tesla.com</td>
+									<td class='customers__table-country'>Iran</td>
+									<td class='customers__table-status'>
+										<label class="customers__table-label">
+											<input type='checkbox' class="customers__table-check" />
+											<span class="customers__table-check-btn" data-inactive='Inactive'
+												data-active='Active'></span>
+										</label>
+									</td>
+								</tr>
+								<tr class='customers__table-item'>
+									<td class='customers__table-name'>Jerome Bell</td>
+									<td class='customers__table-company'>Google</td>
+									<td class='customers__table-phone'>(629) 555-0129</td>
+									<td class='customers__table-email'>jerome@google.com</td>
+									<td class='customers__table-country'>Réunion</td>
+									<td class='customers__table-status'>
+										<label class="customers__table-label">
+											<input type='checkbox' class="customers__table-check" />
+											<span class="customers__table-check-btn" data-inactive='Inactive'
+												data-active='Active'></span>
+										</label>
+									</td>
+								</tr>
+								<tr class='customers__table-item'>
+									<td class='customers__table-name'>Kathryn Murphy</td>
+									<td class='customers__table-company'>Microsoft</td>
+									<td class='customers__table-phone'>(406) 555-0120</td>
+									<td class='customers__table-email'>kathryn@microsoft.com</td>
+									<td class='customers__table-country'>Curaçao</td>
+									<td class='customers__table-status'>
+										<label class="customers__table-label">
+											<input type='checkbox' class="customers__table-check" />
+											<span class="customers__table-check-btn" data-inactive='Inactive'
+												data-active='Active'></span>
+										</label>
+									</td>
+								</tr>
+								<tr class='customers__table-item'>
+									<td class='customers__table-name'>Jacob Jones</td>
+									<td class='customers__table-company'>Yahoo</td>
+									<td class='customers__table-phone'>(208) 555-0112</td>
+									<td class='customers__table-email'>jacob@yahoo.com</td>
+									<td class='customers__table-country'>Brazil</td>
+									<td class='customers__table-status'>
+										<label class="customers__table-label">
+											<input type='checkbox' class="customers__table-check" />
+											<span class="customers__table-check-btn" data-inactive='Inactive'
+												data-active='Active'></span>
+										</label>
+									</td>
+								</tr>
+								<tr class='customers__table-item'>
+									<td class='customers__table-name'>Kristin Watson</td>
+									<td class='customers__table-company'>Facebook</td>
+									<td class='customers__table-phone'>(704) 555-0127</td>
+									<td class='customers__table-email'>kristin@facebook.com</td>
+									<td class='customers__table-country'>Åland Islands</td>
+									<td class='customers__table-status'>
+										<label class="customers__table-label">
+											<input type='checkbox' class="customers__table-check" />
+											<span class="customers__table-check-btn" data-inactive='Inactive'
+												data-active='Active'></span>
+										</label>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="customers__pagination-container">
+						<p class="customers__pagination-info">
+							Showing data 1 to 8 of <span>256</span>K entries
+						</p>
+						<div class="customers__pagination">
+							<div class="customers__prev"></div>
+							<div class="customers__btns">
+								<div class="customers__btn pagination-active">1</div>
+								<div class="customers__btn">2</div>
+								<div class="customers__btn">3</div>
+								<div class="customers__btn">4</div>
+								<span class='customers__btns-selector'>...</span>
+								<div class="customers__btn">40</div>
+							</div>
+							<div class="customers__next"></div>
+						</div>
+					</div>
+				</section>
+			</section>
+		</div>
+	</div>
+
+	<script src="./js/main.js"></script>
+</body>
+
+</html>

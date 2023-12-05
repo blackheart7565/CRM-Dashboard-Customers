@@ -1,0 +1,18 @@
+//~~
+
+.wrapper {
+	display: flex;
+
+	&__left {
+		min-width: 306px;
+
+		@media screen and (max-width: 1150px) {
+			min-width: 0;
+		}
+	}
+
+	&__right {
+		width: min(968px, 100% - 3rem);
+		margin-inline: auto;
+	}
+}

@@ -1,0 +1,339 @@
+//~~
+
+.customers {
+	$self: &;
+	padding-top: 8.8vh;
+
+	// .customers__header
+	&__header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding-right: 13px;
+
+		@media screen and (max-width: 480px) {
+			justify-content: center;
+			flex-direction: column;
+			gap: 40px;
+			padding-right: 0;
+		}
+	}
+
+	// .customers__header-content
+	&__header-content {}
+
+	// .customers__title
+	&__title {
+		line-height: 45px;
+		font-size: $customer-title;
+		font-weight: $semi-bold-weight;
+	}
+
+	// .customers__subtext
+	&__subtext {
+		line-height: 10px;
+		color: $customer-subtext-color;
+	}
+
+	// .customers__search
+	&__search {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+		border-radius: 10px;
+		width: 216px;
+		height: 38px;
+		padding: 0 10px;
+		box-shadow: 2px 2px 10px rgba(204, 204, 204);
+	}
+
+	// .customers__search-icon
+	&__search-icon {}
+
+	// .customers__search-img
+	&__search-img {}
+
+	// .customers__search-label
+	&__search-label {
+		width: 100%;
+		height: 100%;
+	}
+
+	// .customers__search-input
+	&__search-input {
+		width: inherit;
+		height: inherit;
+		outline: none;
+		border: none;
+		padding-right: 10px;
+
+		&::placeholder {
+			color: $customer-list-header;
+		}
+	}
+
+
+	// .customers__table-container
+	&__table-container {
+		width: 100%;
+		overflow-x: auto;
+	}
+
+	// .customers__table
+	&__table {
+		width: 100%;
+		border-collapse: collapse;
+	}
+
+	// .customers__table-header
+	&__table-header {
+		th {
+			color: $customer-list-header;
+			font-weight: $medium-weight;
+			padding-top: 39px;
+			padding-bottom: 14px;
+			padding-right: 10px;
+			padding-left: 10px;
+			text-wrap: nowrap;
+
+			&:not(:last-child) {
+				text-align: left;
+			}
+		}
+	}
+
+	// .customers__table-item
+	&__table-item {
+		&:not(:last-child) {
+			border-bottom: 1px solid $table-item-bottom-line-color;
+			box-shadow: 1px 0 5px $table-item-bottom-line-color;
+		}
+
+		td {
+			color: $customer-item-color;
+			font-weight: $medium-weight;
+			padding: 20px 10px;
+			text-align: left;
+			text-wrap: nowrap;
+		}
+	}
+
+	// .customers__table-name
+	&__table-name {}
+
+	// .customers__table-company
+	&__table-company {}
+
+	// .customers__table-phone
+	&__table-phone {}
+
+	// .customers__table-email
+	&__table-email {}
+
+	// .customers__table-country
+	&__table-country {}
+
+	// .customers__table-status
+	&__table-status {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	// .customers__table-body
+	&__table-body {}
+
+	// .customers__table-label
+	&__table-label {}
+
+	// .customers__item-check
+	&__table-check {
+		position: absolute;
+		z-index: -1;
+		visibility: hidden;
+		appearance: none;
+		-moz-appearance: none;
+		-webkit-appearance: none;
+
+		&:checked {
+			~#{$self}__table-check-btn {
+				border: 1px solid $table-status-border-active-color;
+				background-color: $table-status-bg-active-color;
+				color: $table-status-text-active-color;
+
+				&::before {
+					content: attr(data-inactive);
+				}
+			}
+		}
+	}
+
+	// .customers__table-check-btn
+	&__table-check-btn {
+		cursor: pointer;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 80px;
+		height: 29px;
+		border-radius: 4px;
+		background-color: $table-status-bg-color;
+		border: 1px solid $table-status-border-color;
+		color: $table-status-text-color;
+
+		&::before {
+			content: attr(data-active);
+		}
+	}
+
+	// .customers__pagination-container
+	&__pagination-container {
+		display: flex;
+		padding-top: 30px;
+
+		@media screen and (max-width: 660px) {
+			align-items: center;
+			flex-direction: column-reverse;
+			gap: 30px;
+		}
+	}
+
+	// .customers__pagination-info
+	&__pagination-info {
+		display: flex;
+		align-items: center;
+		flex: 1;
+		color: $customer-list-header;
+
+		>span {
+			padding-left: 5px;
+		}
+	}
+
+	// .customers__pagination
+	&__pagination {
+		display: flex;
+		gap: 15px;
+	}
+
+	// .customers__prev
+	&__prev {
+		cursor: pointer;
+		position: relative;
+
+		width: 30px;
+		height: 30px;
+
+		&:hover {
+			&::before {
+				background: $pagination-next-and-prev-btn-hover-color;
+			}
+
+			&::after {
+				background: $pagination-next-and-prev-btn-hover-color;
+			}
+		}
+
+		&::before,
+		&::after {
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: 50%;
+		}
+
+		&::before {
+			width: 7px;
+			height: 1px;
+			transform: rotate(-45deg);
+			transform-origin: left bottom;
+			background: $pagination-btn-color;
+		}
+
+		&::after {
+			width: 7px;
+			height: 1px;
+			transform: rotate(45deg);
+			transform-origin: left top;
+			background: $pagination-btn-color;
+		}
+	}
+
+	// .customers__btns
+	&__btns {
+		display: flex;
+		align-items: flex-end;
+		gap: 5px;
+	}
+
+	// .customers__btns-selector
+	&__btns-selector {
+		position: relative;
+		bottom: 5px;
+	}
+
+	// .customers__btn
+	&__btn {
+		cursor: pointer;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 7px 12px;
+		border-radius: 4px;
+		font-weight: $medium-weight;
+		color: $pagination-btn-color;
+		transition: transitionProperty(color), transitionProperty(background-color);
+
+		&:hover {
+			color: $white;
+			background-color: $pagination-btn-active-color;
+		}
+	}
+
+	// .customers__next
+	&__next {
+		cursor: pointer;
+		position: relative;
+		width: 30px;
+		height: 30px;
+
+		&:hover {
+			&::before {
+				background: $pagination-next-and-prev-btn-hover-color;
+			}
+
+			&::after {
+				background: $pagination-next-and-prev-btn-hover-color;
+			}
+		}
+
+		&::before,
+		&::after {
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: 50%;
+		}
+
+		&::before {
+			width: 7px;
+			height: 1px;
+			transform: rotate(45deg);
+			transform-origin: right bottom;
+			background: $pagination-btn-color;
+		}
+
+		&::after {
+			width: 7px;
+			height: 1px;
+			transform: rotate(-45deg);
+			transform-origin: right top;
+			background: $pagination-btn-color;
+		}
+	}
+}
+
+.pagination-active {
+	color: $white;
+	background-color: $pagination-btn-active-color;
+}

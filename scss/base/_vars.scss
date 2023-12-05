@@ -1,0 +1,38 @@
+//~~
+
+:root {
+	--index: calc(1vw + 1vh);
+}
+
+// color
+$side-menu-list-hover-color: #5932EA;
+$user-post-color: #757575;
+$customer-subtext-color: #16C098;
+$customer-list-header: #B5B7C0;
+$customer-item-color: #292D32;
+$pagination-btn-active-color: #5932EA;
+$pagination-btn-color: #404B52;
+$table-item-bottom-line-color: #EEEEEE;
+$white: #FFF;
+$black: #000000;
+$table-status-border-color: #00B087;
+$table-status-bg-color: #16c09861;
+$table-status-text-color: #008767;
+$table-status-border-active-color: #DF0404;
+$table-status-bg-active-color: #FFC5C5;
+$table-status-text-active-color: #DF0404;
+$pagination-next-and-prev-btn-hover-color: #070808;
+
+// font-size
+$default-size: 14px;
+$side-menu-title-size: 26px;
+$side-menu-version-size: 10px;
+$user-post-size: 12px;
+$user-info-line-height: 18px;
+$right-section-title: 24px;
+$customer-title: 22px;
+
+// font-weight
+$regular-weight: 400;
+$medium-weight: 500;
+$semi-bold-weight: 600;

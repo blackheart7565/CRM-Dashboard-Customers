@@ -1,0 +1,9 @@
+//~~
+
+@function transitionProperty($property: null, $time: null) {
+	@if($time ==null) {
+		@return $property 0.3s ease-in-out;
+	}
+
+	@return $property #{$time}s ease-in-out;
+}
